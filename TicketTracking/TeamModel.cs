@@ -8,5 +8,8 @@ namespace TicketTracking
 {
     class TeamModel
     {
+        public string Team_Name { get; set; }
+        public List<EmployeeModel> Team_Member { get; set; }        
+        public List<EmployeeModel> Team_Leader { get; set; }
     }
 }

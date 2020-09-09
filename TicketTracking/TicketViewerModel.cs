@@ -8,5 +8,8 @@ namespace TicketTracking
 {
     class TicketViewerModel
     {
+        public List<TicketModel> Ticket_List { get; set; }
+        public EmployeeModel Ticket_Creator { get; set; }
+        public Boolean Ticket_Attachment { get; set; }
     }
 }
