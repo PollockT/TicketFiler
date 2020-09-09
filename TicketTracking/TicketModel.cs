@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TicketTracking
 {
-    public class Class1
+    class TicketModel
     {
     }
 }
