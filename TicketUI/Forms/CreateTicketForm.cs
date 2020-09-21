@@ -8,11 +8,12 @@ using System.Windows.Forms;
 
 namespace TicketUI
 {
-    public partial class CreateTicketView : Form
+    public partial class CreateTicketForm : Form
     {
-        public CreateTicketView()
+        public CreateTicketForm()
         {
             InitializeComponent();
         }
+
     }
 }
