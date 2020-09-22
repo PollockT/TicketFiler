@@ -3,19 +3,16 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TicketUI
+namespace TicketUI.Forms
 {
-    public partial class loginForm : Form
+    public partial class LoginForm : Form
     {
-        public loginForm()
+        public LoginForm()
         {
             InitializeComponent();
         }
-
     }
 }

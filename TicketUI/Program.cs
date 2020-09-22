@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TicketUI.Forms;
 
 namespace TicketUI
 {
@@ -17,7 +18,7 @@ namespace TicketUI
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CreateTicketForm());
+            Application.Run(new LoginForm());
         }
     }
 }
