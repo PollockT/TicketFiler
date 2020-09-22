@@ -118,6 +118,7 @@
             this.ticketBuildTitleTextBox.Location = new System.Drawing.Point(221, 65);
             this.ticketBuildTitleTextBox.Name = "ticketBuildTitleTextBox";
             this.ticketBuildTitleTextBox.PlaceholderText = "<Ticket Title>";
+            this.ticketBuildTitleTextBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ticketBuildTitleTextBox.Size = new System.Drawing.Size(337, 35);
             this.ticketBuildTitleTextBox.TabIndex = 5;
             // 

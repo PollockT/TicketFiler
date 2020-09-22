@@ -6,11 +6,11 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace TicketUI
+namespace TicketUI.Forms
 {
-    public partial class ViewTicketView : Form
+    public partial class ViewTicketForm : Form
     {
-        public ViewTicketView()
+        public ViewTicketForm()
         {
             InitializeComponent();
         }
