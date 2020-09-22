@@ -40,6 +40,7 @@
             this.ticketBuildCategoryLabel = new System.Windows.Forms.Label();
             this.ticketBuildCategoryUpDown = new System.Windows.Forms.DomainUpDown();
             this.ticketBuildDescriptionRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.ticketCreationTimeLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // headerBuildLabel
@@ -125,7 +126,7 @@
             // ticketBuildTime
             // 
             this.ticketBuildTime.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.ticketBuildTime.Location = new System.Drawing.Point(48, 198);
+            this.ticketBuildTime.Location = new System.Drawing.Point(17, 224);
             this.ticketBuildTime.Name = "ticketBuildTime";
             this.ticketBuildTime.Size = new System.Drawing.Size(127, 35);
             this.ticketBuildTime.TabIndex = 6;
@@ -133,7 +134,7 @@
             // ticketBuildCategoryLabel
             // 
             this.ticketBuildCategoryLabel.AutoSize = true;
-            this.ticketBuildCategoryLabel.Location = new System.Drawing.Point(48, 103);
+            this.ticketBuildCategoryLabel.Location = new System.Drawing.Point(17, 103);
             this.ticketBuildCategoryLabel.Name = "ticketBuildCategoryLabel";
             this.ticketBuildCategoryLabel.Size = new System.Drawing.Size(96, 30);
             this.ticketBuildCategoryLabel.TabIndex = 3;
@@ -149,7 +150,7 @@
             this.ticketBuildCategoryUpDown.Items.Add("Performance");
             this.ticketBuildCategoryUpDown.Items.Add("Account Information");
             this.ticketBuildCategoryUpDown.Items.Add("Administration");
-            this.ticketBuildCategoryUpDown.Location = new System.Drawing.Point(48, 139);
+            this.ticketBuildCategoryUpDown.Location = new System.Drawing.Point(17, 139);
             this.ticketBuildCategoryUpDown.Name = "ticketBuildCategoryUpDown";
             this.ticketBuildCategoryUpDown.Size = new System.Drawing.Size(269, 35);
             this.ticketBuildCategoryUpDown.TabIndex = 7;
@@ -163,12 +164,22 @@
             this.ticketBuildDescriptionRichTextBox.TabIndex = 8;
             this.ticketBuildDescriptionRichTextBox.Text = "";
             // 
+            // ticketCreationTimeLabel
+            // 
+            this.ticketCreationTimeLabel.AutoSize = true;
+            this.ticketCreationTimeLabel.Location = new System.Drawing.Point(17, 191);
+            this.ticketCreationTimeLabel.Name = "ticketCreationTimeLabel";
+            this.ticketCreationTimeLabel.Size = new System.Drawing.Size(164, 30);
+            this.ticketCreationTimeLabel.TabIndex = 9;
+            this.ticketCreationTimeLabel.Text = "Incident of Time";
+            // 
             // CreateTicketForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(583, 501);
+            this.Controls.Add(this.ticketCreationTimeLabel);
             this.Controls.Add(this.ticketBuildDescriptionRichTextBox);
             this.Controls.Add(this.ticketBuildCategoryUpDown);
             this.Controls.Add(this.ticketBuildCategoryLabel);
@@ -203,5 +214,6 @@
         private System.Windows.Forms.Label ticketBuildCategoryLabel;
         private System.Windows.Forms.DomainUpDown ticketBuildCategoryUpDown;
         private System.Windows.Forms.RichTextBox ticketBuildDescriptionRichTextBox;
+        private System.Windows.Forms.Label ticketCreationTimeLabel;
     }
 }

@@ -36,6 +36,8 @@
             this.ticketCategoryUpDown = new System.Windows.Forms.DomainUpDown();
             this.ticketPriorityLabel = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.ticketTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.ticketTimeLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // headingLabel
@@ -116,12 +118,31 @@
             this.comboBox1.TabIndex = 2;
             this.comboBox1.Text = "5";
             // 
+            // ticketTimePicker
+            // 
+            this.ticketTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.ticketTimePicker.Location = new System.Drawing.Point(12, 273);
+            this.ticketTimePicker.Name = "ticketTimePicker";
+            this.ticketTimePicker.Size = new System.Drawing.Size(127, 35);
+            this.ticketTimePicker.TabIndex = 6;
+            // 
+            // ticketTimeLabel
+            // 
+            this.ticketTimeLabel.AutoSize = true;
+            this.ticketTimeLabel.Location = new System.Drawing.Point(10, 240);
+            this.ticketTimeLabel.Name = "ticketTimeLabel";
+            this.ticketTimeLabel.Size = new System.Drawing.Size(164, 30);
+            this.ticketTimeLabel.TabIndex = 9;
+            this.ticketTimeLabel.Text = "Incident of Time";
+            // 
             // ViewTicketForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(617, 600);
+            this.Controls.Add(this.ticketTimeLabel);
+            this.Controls.Add(this.ticketTimePicker);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.ticketPriorityLabel);
             this.Controls.Add(this.ticketCategoryUpDown);
@@ -148,5 +169,7 @@
         private System.Windows.Forms.DomainUpDown ticketCategoryUpDown;
         private System.Windows.Forms.Label ticketPriorityLabel;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DateTimePicker ticketTimePicker;
+        private System.Windows.Forms.Label ticketTimeLabel;
     }
 }
