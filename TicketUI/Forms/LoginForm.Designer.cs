@@ -86,12 +86,17 @@
             // 
             // loginQuitButton
             // 
+            this.loginQuitButton.BackColor = System.Drawing.Color.Red;
+            this.loginQuitButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.loginQuitButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.loginQuitButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.loginQuitButton.Location = new System.Drawing.Point(444, 423);
             this.loginQuitButton.Name = "loginQuitButton";
             this.loginQuitButton.Size = new System.Drawing.Size(155, 50);
             this.loginQuitButton.TabIndex = 5;
             this.loginQuitButton.Text = "Quit Application";
-            this.loginQuitButton.UseVisualStyleBackColor = true;
+            this.loginQuitButton.UseVisualStyleBackColor = false;
+            this.loginQuitButton.Click += new System.EventHandler(this.loginQuitButton_Click);
             // 
             // loginContactLabel
             // 

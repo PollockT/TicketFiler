@@ -89,7 +89,7 @@
             // 
             // ticketBuildAddButton
             // 
-            this.ticketBuildAddButton.BackColor = System.Drawing.Color.Transparent;
+            this.ticketBuildAddButton.BackColor = System.Drawing.Color.Green;
             this.ticketBuildAddButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
             this.ticketBuildAddButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ticketBuildAddButton.Location = new System.Drawing.Point(48, 452);
@@ -98,18 +98,20 @@
             this.ticketBuildAddButton.TabIndex = 4;
             this.ticketBuildAddButton.Text = "Add Ticket";
             this.ticketBuildAddButton.UseVisualStyleBackColor = false;
+            this.ticketBuildAddButton.Click += new System.EventHandler(this.ticketBuildAddButton_Click);
             // 
             // ticketBuildCancelButton
             // 
+            this.ticketBuildCancelButton.BackColor = System.Drawing.Color.Red;
             this.ticketBuildCancelButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.ticketBuildCancelButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.ticketBuildCancelButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.ticketBuildCancelButton.Location = new System.Drawing.Point(370, 452);
             this.ticketBuildCancelButton.Name = "ticketBuildCancelButton";
             this.ticketBuildCancelButton.Size = new System.Drawing.Size(157, 37);
             this.ticketBuildCancelButton.TabIndex = 4;
             this.ticketBuildCancelButton.Text = "Cancel Ticket";
-            this.ticketBuildCancelButton.UseVisualStyleBackColor = true;
+            this.ticketBuildCancelButton.UseVisualStyleBackColor = false;
+            this.ticketBuildCancelButton.Click += new System.EventHandler(this.ticketBuildCancelButton_Click);
             // 
             // ticketBuildTitleTextBox
             // 
