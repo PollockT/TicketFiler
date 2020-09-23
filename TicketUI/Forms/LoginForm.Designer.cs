@@ -107,6 +107,7 @@
             this.loginContactLabel.TabIndex = 6;
             this.loginContactLabel.TabStop = true;
             this.loginContactLabel.Text = "Contact Administrator";
+            this.loginContactLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.loginContactLabel_LinkClicked);
             // 
             // LoginForm
             // 

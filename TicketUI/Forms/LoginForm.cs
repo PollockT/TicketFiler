@@ -28,5 +28,16 @@ namespace TicketUI.Forms
             System.Windows.Forms.Application.Exit();
             Trace.WriteLine("Application Closed-");
         }
+
+        /// <summary>
+        /// Label that lets the user connect with administrator via default email application on computer
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void loginContactLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Trace.WriteLine("Link label clicked to open email application");
+            //TODO: open default email client and fill out to sender with admin information
+        }
     }
 }

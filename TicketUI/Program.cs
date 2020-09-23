@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TicketUI.Forms;
+using System.Diagnostics;
 
 namespace TicketUI
 {
@@ -15,10 +16,14 @@ namespace TicketUI
         [STAThread]
         static void Main()
         {
+            Trace.Listeners.Add(new TextWriterTraceListener(Console.Out));
+            Trace.AutoFlush = true;
+            Trace.Indent();
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new ViewTicketForm());
+            Trace.Unindent();
         }
     }
 }

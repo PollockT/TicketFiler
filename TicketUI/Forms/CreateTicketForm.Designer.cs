@@ -41,6 +41,7 @@
             this.ticketBuildCategoryUpDown = new System.Windows.Forms.DomainUpDown();
             this.ticketBuildDescriptionRichTextBox = new System.Windows.Forms.RichTextBox();
             this.ticketCreationTimeLabel = new System.Windows.Forms.Label();
+            this.ticketBuildDescriptionLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // headerBuildLabel
@@ -173,12 +174,22 @@
             this.ticketCreationTimeLabel.TabIndex = 9;
             this.ticketCreationTimeLabel.Text = "Incident of Time";
             // 
+            // ticketBuildDescriptionLabel
+            // 
+            this.ticketBuildDescriptionLabel.AutoSize = true;
+            this.ticketBuildDescriptionLabel.Location = new System.Drawing.Point(313, 191);
+            this.ticketBuildDescriptionLabel.Name = "ticketBuildDescriptionLabel";
+            this.ticketBuildDescriptionLabel.Size = new System.Drawing.Size(178, 30);
+            this.ticketBuildDescriptionLabel.TabIndex = 10;
+            this.ticketBuildDescriptionLabel.Text = "Ticket Description";
+            // 
             // CreateTicketForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(583, 501);
+            this.Controls.Add(this.ticketBuildDescriptionLabel);
             this.Controls.Add(this.ticketCreationTimeLabel);
             this.Controls.Add(this.ticketBuildDescriptionRichTextBox);
             this.Controls.Add(this.ticketBuildCategoryUpDown);
@@ -215,5 +226,6 @@
         private System.Windows.Forms.DomainUpDown ticketBuildCategoryUpDown;
         private System.Windows.Forms.RichTextBox ticketBuildDescriptionRichTextBox;
         private System.Windows.Forms.Label ticketCreationTimeLabel;
+        private System.Windows.Forms.Label ticketBuildDescriptionLabel;
     }
 }

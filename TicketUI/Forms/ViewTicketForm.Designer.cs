@@ -38,6 +38,11 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.ticketTimePicker = new System.Windows.Forms.DateTimePicker();
             this.ticketTimeLabel = new System.Windows.Forms.Label();
+            this.ticketCancelButton = new System.Windows.Forms.Button();
+            this.ticketCloseButton = new System.Windows.Forms.Button();
+            this.ticketUpdateButton = new System.Windows.Forms.Button();
+            this.ticketTextBox = new System.Windows.Forms.RichTextBox();
+            this.ticketDescriptionLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // headingLabel
@@ -135,12 +140,74 @@
             this.ticketTimeLabel.TabIndex = 9;
             this.ticketTimeLabel.Text = "Incident of Time";
             // 
+            // ticketCancelButton
+            // 
+            this.ticketCancelButton.BackColor = System.Drawing.Color.Gold;
+            this.ticketCancelButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ticketCancelButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.ticketCancelButton.Location = new System.Drawing.Point(216, 514);
+            this.ticketCancelButton.Name = "ticketCancelButton";
+            this.ticketCancelButton.Size = new System.Drawing.Size(166, 74);
+            this.ticketCancelButton.TabIndex = 4;
+            this.ticketCancelButton.Text = "Cancel Ticket Changes";
+            this.ticketCancelButton.UseVisualStyleBackColor = false;
+            this.ticketCancelButton.Click += new System.EventHandler(this.ticketCancelButton_Click);
+            // 
+            // ticketCloseButton
+            // 
+            this.ticketCloseButton.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.ticketCloseButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ticketCloseButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.ticketCloseButton.Location = new System.Drawing.Point(408, 514);
+            this.ticketCloseButton.Name = "ticketCloseButton";
+            this.ticketCloseButton.Size = new System.Drawing.Size(166, 74);
+            this.ticketCloseButton.TabIndex = 4;
+            this.ticketCloseButton.Text = "Close Ticket";
+            this.ticketCloseButton.UseVisualStyleBackColor = false;
+            this.ticketCloseButton.Click += new System.EventHandler(this.ticketCloseButton_Click);
+            // 
+            // ticketUpdateButton
+            // 
+            this.ticketUpdateButton.BackColor = System.Drawing.Color.Green;
+            this.ticketUpdateButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ticketUpdateButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.ticketUpdateButton.Location = new System.Drawing.Point(15, 514);
+            this.ticketUpdateButton.Name = "ticketUpdateButton";
+            this.ticketUpdateButton.Size = new System.Drawing.Size(166, 74);
+            this.ticketUpdateButton.TabIndex = 4;
+            this.ticketUpdateButton.Text = "Update Ticket";
+            this.ticketUpdateButton.UseVisualStyleBackColor = false;
+            this.ticketUpdateButton.Click += new System.EventHandler(this.ticketUpdateButton_Click);
+            // 
+            // ticketTextBox
+            // 
+            this.ticketTextBox.BackColor = System.Drawing.SystemColors.Info;
+            this.ticketTextBox.Location = new System.Drawing.Point(310, 273);
+            this.ticketTextBox.Name = "ticketTextBox";
+            this.ticketTextBox.Size = new System.Drawing.Size(264, 207);
+            this.ticketTextBox.TabIndex = 8;
+            this.ticketTextBox.Text = "";
+            // 
+            // ticketDescriptionLabel
+            // 
+            this.ticketDescriptionLabel.AutoSize = true;
+            this.ticketDescriptionLabel.Location = new System.Drawing.Point(358, 240);
+            this.ticketDescriptionLabel.Name = "ticketDescriptionLabel";
+            this.ticketDescriptionLabel.Size = new System.Drawing.Size(178, 30);
+            this.ticketDescriptionLabel.TabIndex = 10;
+            this.ticketDescriptionLabel.Text = "Ticket Description";
+            // 
             // ViewTicketForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(617, 600);
+            this.Controls.Add(this.ticketDescriptionLabel);
+            this.Controls.Add(this.ticketTextBox);
+            this.Controls.Add(this.ticketUpdateButton);
+            this.Controls.Add(this.ticketCloseButton);
+            this.Controls.Add(this.ticketCancelButton);
             this.Controls.Add(this.ticketTimeLabel);
             this.Controls.Add(this.ticketTimePicker);
             this.Controls.Add(this.comboBox1);
@@ -171,5 +238,10 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DateTimePicker ticketTimePicker;
         private System.Windows.Forms.Label ticketTimeLabel;
+        private System.Windows.Forms.Button ticketCancelButton;
+        private System.Windows.Forms.Button ticketCloseButton;
+        private System.Windows.Forms.Button ticketUpdateButton;
+        private System.Windows.Forms.RichTextBox ticketTextBox;
+        private System.Windows.Forms.Label ticketDescriptionLabel;
     }
 }
